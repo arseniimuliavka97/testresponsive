@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive</title>
+        <link rel="stylesheet" href="responsive.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="text-base xl:text-lg lg:text-xl md:text-2xl text-center">Hello World!</div>
+        <h1 class="text-lg lg:text-2xl xl:text-3xl text-center">Responsive Heading</h1>
+        <div class="responsive-1 w-screen h-screen grid lg:grid-flow-col xl:bg-white lg:bg-slate-700 md:bg-purple-900 sm:bg-green-950 justify-center items-center">
+           <div class="square-1 w-96 h-96 bg-red-600 xl:text-gray-600 lg:text-white md:text-amber-300 lg:text-3xl md:text-6xl sm:text-9xl sm:text-black">A</div>
+           <div class="square-2 w-96 h-96 bg-yellow-500 xl:text-slate-900 lg:text-white lg:text-3xl md:text-6xl sm:text-9xl sm:text-amber-950">B</div>
+           <div class="square-3 w-96 h-96 bg-green-400 xl:text-blue-500 lg:text-white lg:text-3xl md:text-6xl sm:text-9xl sm:text-pink-600">C</div>
+        </div>
+        <!--<div class="flex lg:flex-row md:flex-col w-56 h-56 relative lg:left-[555px] bg-slate-500">
+            <div class="md:w-1/2 w-10 h-5 bg-white">Content 1</div>
+            <div class="md:w-1/2 w-10 h-5 bg-black text-white">Content 2</div>
+          </div>-->
+          <div class="hidden md:block">Visible on medium screens and up</div>
+    </body>
+</html>
