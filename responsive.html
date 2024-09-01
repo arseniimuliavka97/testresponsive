@@ -5,19 +5,29 @@
         <title>Responsive</title>
         <link rel="stylesheet" href="responsive.css">
         <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </head>
     <body>
         <div class="text-base xl:text-lg lg:text-xl md:text-2xl text-center">Hello World!</div>
         <h1 class="text-lg lg:text-2xl xl:text-3xl text-center">Responsive Heading</h1>
-        <div class="responsive-1 w-screen h-screen grid lg:grid-flow-col xl:bg-white lg:bg-slate-700 md:bg-purple-900 sm:bg-green-950 justify-center items-center">
-           <div class="square-1 w-96 h-96 bg-red-600 xl:text-gray-600 lg:text-white md:text-amber-300 lg:text-3xl md:text-6xl sm:text-9xl sm:text-black">A</div>
-           <div class="square-2 w-96 h-96 bg-yellow-500 xl:text-slate-900 lg:text-white lg:text-3xl md:text-6xl sm:text-9xl sm:text-amber-950">B</div>
-           <div class="square-3 w-96 h-96 bg-green-400 xl:text-blue-500 lg:text-white lg:text-3xl md:text-6xl sm:text-9xl sm:text-pink-600">C</div>
+        <div class="menu w-full h-[25%] border-4 border-gray-700 fixed bottom-[400px] z-10 bg-slate-400">
+                <span class="relative top-3 left-20 text-9xl xl:hidden lg:hidden">
+                    <ion-icon name="menu" class="cursor-pointer"></ion-icon>
+                    <ion-icon name="close" class="cursor-pointer"></ion-icon>
+                </span>
+            <ul class="list-none xl:flex lg:flex xl:flex-row lg:flex-row md:flex-col md:right-80 md:z-auto xl:opacity-100 lg:opacity-100 md:hidden sm:hidden sm:flex-col sm:right-56 sm:text-5xl sm:gap-5 justify-center items-center relative top-14 right-96 xl:gap-6 xl:text-3xl md:gap-3 md:text-2xl">
+                <li><a class="hover:text-green-900" href="#">Item 1</a></li>
+                <li><a class="hover:text-green-900" href="#">Item 2</a></li>
+                <li><a class="hover:text-green-900" href="#">Item 3</a></li>
+                <li><a class="hover:text-green-900" href="#">Item 4</a></li>
+                <li><a class="hover:text-green-900" href="#">Item 5</a></li>
+            </ul>
         </div>
-        <!--<div class="flex lg:flex-row md:flex-col w-56 h-56 relative lg:left-[555px] bg-slate-500">
-            <div class="md:w-1/2 w-10 h-5 bg-white">Content 1</div>
-            <div class="md:w-1/2 w-10 h-5 bg-black text-white">Content 2</div>
-          </div>-->
+        <div class="responsive-1 border-4 border-black w-full h-full grid lg:grid-flow-col xl:bg-white lg:bg-slate-700 md:bg-purple-900 sm:bg-green-950 justify-center items-center">
+           <div class="square-1 xl:w-[calc(100%-200px)] xl:h-[calc(100% - 200px)] md:w-[calc(100%-400px)] md:h-[calc(100%-400px)] sm:w-[calc(100%-600px)] sm:h-[calc(100%-600px)] xl:text-gray-900 lg:text-white md:text-amber-300 lg:text-3xl md:text-6xl sm:text-9xl sm:text-amber-700 relative left-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nisi doloribus ipsa saepe itaque. Expedita est nihil facilis accusamus ab. Material design & Cupertino design</div>
+           <div class="square-2 xl:w-[500px] xl:h-[200px] md:w-[500px] md:h-[200px] sm:w-[calc(100%-600px)] sm:h-[calc(100%-600px)] xl:text-slate-900 lg:text-white lg:text-3xl md:text-6xl sm:text-9xl sm:text-amber-950 xl:visible lg:visible md:invisible sm:invisible relative left-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae eos ipsa expedita eveniet rerum ea repellat doloribus illum corporis!</div>
+        </div>
           <div class="hidden md:block">Visible on medium screens and up</div>
     </body>
 </html>
